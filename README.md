@@ -1,4 +1,4 @@
-# COVID-19-HACKATHON-
+# COVID-19-HACKATHON
 by : 
 Abhishek Singh Kushwaha (19BEC001)
 Aman Kumar (19BEC003)
