@@ -1,16 +1,32 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_excel ('C:\\Users\\91787\\OneDrive\\Desktop\\my programs\\python\\Hackathon_Cornavirus\\deathduration.xlsx') 
-print (df)
+
 def bar(f):
-    plt.figure(figsize = (20,30))
-    plt.bar(f['Countries'],f['How long did it take to number of confirmed death case to Double(in days)'])
-                 #set label
-    plt.title('Covid-19 death rate', fontweight = 'bold')
-    plt.yticks([5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80])
-    plt.ylabel('How long did it take to number of confirmed death case to Double(in days)')
-    plt.xlabel('Countries')
+    plt.figure(figsize = (10,5))
+    plt.bar(f['Date'],f['No of Deaths'])
+          #set label
+    plt.ylabel('No of Deaths')
+    plt.xlabel('Date')
+    plt.title('Daily covid 19 deaths in '+ k, fontweight = 'bold')
     plt.show()
-f=pd.read_excel('C:\\Users\\91787\\OneDrive\\Desktop\\my programs\\python\\deathduration.xlsx')
-bar(f)    
+print("Time data for no of confirmed death cases of different countries") 
+print("For India click 1")   
+print("For UK click 2")
+print("For USA click 3")
+print("For Italy click 4")
+print("For Germany click 5")
+n=int(input("click the desired country"))
+if(n==1):
+    k="India"
+elif(n==2):
+    k="UK"
+elif(n==3):
+    k="USA"
+elif(n==4):
+    k="Italy"
+elif(n==5):
+    k="Germany"
+df = pd.read_excel ('C:\\Users\\91787\\OneDrive\\Desktop\\my programs\\python\\daily deaths in covid 19.xlsx',k)
+print (df)    
+bar(df)    
