@@ -29,10 +29,11 @@ date= list(Totalcase.row_values(0))
 date.pop(0)
 print("Enter the country which you are inrested for internship :")
 country=input()
-countries=list(Totalcase.col_values(0))
+countries=list(Totalcase.col_values(1))
+d=list(Totalcase.col_values(0))
 i=0
 for a in countries:
-    if(a==country):
+    if(a==country and d[i]== ''):
         break
     i=i+1
 country_cases=list(Totalcase.row_values(i))
