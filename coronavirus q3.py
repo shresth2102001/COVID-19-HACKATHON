@@ -27,6 +27,6 @@ elif(n==4):
     k="Italy"
 elif(n==5):
     k="Germany"
-df = pd.read_excel ('C:\\Users\\91787\\OneDrive\\Desktop\\my programs\\python\\daily deaths in covid 19.xlsx',k)
+df = pd.read_excel ('C:\\Users\\91787\\OneDrive\\Desktop\\my programs\\python\\Hackathon_Cornavirus\\daily deaths in covid 19.xlsx',k)
 print (df)    
 bar(df)    
