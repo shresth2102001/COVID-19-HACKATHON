@@ -1,5 +1,5 @@
 # COVID-19-HACKATHON
-It is a team contributed task aiming to present a program showing the covid 19 data of counries affected by covid 19(Data is upto 21-apr-2020)
+It is a team contributed task aiming to present a program showing the covid 19 data of counries affected by covid 19(Data Should be updated at the time of prossessing.)
 
 by : 
 
